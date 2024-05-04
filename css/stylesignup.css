@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../image/bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    max-width: 680px;
+    height: 600px;
+    padding: 30px;
+    margin: 0 28px;
+    border-radius: 15px;
+    backdrop-filter: blur(50px);
+    border: 3px solid rgb(27, 0, 124);
+}
+.form-title{
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(27, 0, 124);
+    font-weight: 700;
+    line-height: 2;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    gap: 10px;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+#userName,
+#phoneNumber,
+#ConfirmPassword{
+    margin-left: 15px;
+}
+#fullName,
+#email,
+#password{
+    margin-right: 15px;
+}
+.user-input-box input::placeholder{
+    color: rgb(27, 0, 124);
+}
+.user-input-box input{
+    height: 50px;
+    width: 600px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    color: rgb(27, 0, 124);
+    font-size: 18px;
+    background: transparent;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(27, 0, 124);
+}
+.gender-title{
+    color: rgb(27, 0, 124);
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(27, 0, 124);
+    padding-bottom: 3px;
+}
+.gender-category{
+    margin: 15px 0;
+    color: rgb(27, 0, 124);
+}
+.gender-category label{
+    padding: 0 20px;
+    font-size: 20px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+.form-submit-btn{
+    margin-top: 40px;
+}
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(27, 0, 124);
+    border-radius: 5px;
+    color: rgb(27, 0, 124);
+    background: transparent;
+    transition: 0.5s ease-in-out;
+}
+.form-submit-btn input:hover{
+    background: rgb(27, 0, 124);
+    color: rgb(255, 255, 255);
+}

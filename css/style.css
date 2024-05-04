@@ -99,9 +99,9 @@ header a:hover {
   right: -50px;
   top: 500px;
   float: right;
-  padding: 15px;
+  padding: 10px;
   border-radius: 25px;
-  border: 3px solid rgb(27, 0, 124);
+  border: 3px dashed rgb(27, 0, 124);
 }
 .desc1 {
   height: 350px;
@@ -115,10 +115,10 @@ header a:hover {
   width: 500px;
   left: 100px;
   top: 60px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 25px;
   margin-left: 100px;
-  border: 3px solid rgb(27, 0, 124);
+  border: 3px dashed rgb(27, 0, 124);
 }
 .desc2 {
   height: 350px;
@@ -138,10 +138,11 @@ header a:hover {
 }
 .img3 img {
   height: 300px;
-  width: 350px;
-  padding: 15px;
+  width: 305px;
+  margin: 0 20px;
+  padding: 5px;
   border-radius: 25px;
-  border: 3px solid rgb(27, 0, 124);
+  border: 3px dashed rgb(27, 0, 124);
 }
 .desc3 {
   text-align: center;

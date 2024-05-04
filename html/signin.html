@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration </title>
+    <link rel="stylesheet" href="../css/stylesignup.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Registration</h1>
+        <form action="../php/sigup.php" method="post">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+                </div>
+                <div class="user-input-box">
+                    <input type="text" id="userName" name="userName" placeholder="Username">
+                </div>
+                <div class="user-input-box">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="user-input-box">
+                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                </div>
+                <div class="user-input-box">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class="user-input-box">
+                    <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="gender-details-box">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" > 
+                    
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female" > 
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" value="register">
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
