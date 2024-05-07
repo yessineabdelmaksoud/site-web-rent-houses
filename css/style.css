@@ -45,23 +45,37 @@ header a:hover {
   transform: scale(1.1);
 }
 /*---------------------------entet---------------------------*/
+
 .entet {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  height: 70px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #dbbdff;
   z-index: 1;
+  width: auto;
+  height: auto;
 }
+
+.entet ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+}
+
 .entet ul li {
   display: inline-block;
-  list-style: none;
-  padding: 10px 50px;
+  padding: 10px 20px; 
+  max-height: auto ;
+  max-width: auto;
+  
 }
+
 .entet ul li a {
   position: relative;
   color: #333;
@@ -71,6 +85,7 @@ header a:hover {
   border-radius: 10px;
   padding: 10px;
 }
+
 .entet ul li a::after {
   content: "";
   position: absolute;
@@ -81,11 +96,20 @@ header a:hover {
   background: rgb(27, 0, 124);
   transition: 0.5s;
 }
+
 .entet ul li a:hover {
   color: rgb(27, 0, 124);
 }
+
 .entet ul li a:hover::after {
   width: 100%;
+}
+
+/* Média query pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+  .entet ul li {
+      padding: 10px 10px; /* Ajuster l'espacement pour les écrans plus petits */
+  }
 }
 /*-------------------corp----------------------*/
 .corp {
