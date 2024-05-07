@@ -95,10 +95,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,50 +102,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>add yours </title>
-    <link rel="stylesheet" href="../css/add.css">
+    <title>Add yours</title>
+    <link rel="stylesheet" href="../css/Add.css">
 </head>
 
 <body>
     <div class="glass-container">
         <div class="add-box">
-            <h2>add you home</h2>
+            <h2>Add your Home</h2>
             <form action="add.php" method="POST" enctype="multipart/form-data">
                 <select id="for" name="for">
-                    <option value="rent">for rent</option>
-                    <option value="sale">for sale</option>
-                    <option value="holiday">for holiday</option>
-                    <option value="student">for student</option>
+                    <option value="rent">For Rent</option>
+                    <option value="sale">For Sale</option>
+                    <option value="holiday">For Holiday</option>
+                    <option value="student">For Student</option>
                 </select>
-                <input type="text" id="nbroom" name="nbroom" required placeholder="number of room..">
+                <input type="text" id="nbroom" name="nbroom" required placeholder="Number of rooms..">
                 <select id="localisation" name="localisation">
-                    <option value="tunis">tunis</option>
-                    <option value="sfax">sfax</option>
-                    <option value="mahdia">mahdia</option>
-                    <option value="sousse">sousse</option>
-                    <option value="kairouan">kairouan</option>
-                    <option value="gabes">gabes</option>
-                    <option value="monastir">monastir</option>
-                    <option value="bizerte">bizerte</option>
+                    <option value="tunis">Tunis</option>
+                    <option value="sfax">Sfax</option>
+                    <option value="mahdia">Mahdia</option>
+                    <option value="sousse">Sousse</option>
+                    <option value="kairouan">Kairouan</option>
+                    <option value="gabes">Gabes</option>
+                    <option value="monastir">Monastir</option>
+                    <option value="bizerte">Bizerte</option>
                 </select>
-                <input type="text" id="price" name="price" required placeholder="price of your house">
+                <input type="text" id="price" name="price" required placeholder="Price of your house">
                 <select id="type" name="type">
-                    <option value="rent">Apartments </option>
-                    <option value="sale">Villas </option>
+                    <option value="rent">Apartments</option>
+                    <option value="sale">Villas</option>
                     <option value="holiday">Duplexes</option>
                     <option value="student">Traditional Houses</option>
-                    <option value="student">studio</option>
+                    <option value="student">Studio</option>
                 </select>
-                <input type="text" id="describe" name="describe" required placeholder="describe your house">
-                <p>choose photo couverture de votre poste</p>
+                <input type="text" id="describe" name="describe" required placeholder="Describe your house">
+                <p>Choose a cover photo for your post</p>
                 <input type="file" name="file">
-                <p>choose les autre images of your room</p>
+                <p>Choose other images</p>
                 <input type="file" name="files[]" multiple>
                 <br>
-                <button type="submit">add you home</button>
-                <p><a href="home.php">HOME</a></p>
+                <button type="submit">Add your Home</button><br>
+                <p><a href="home.php">Return To HOME</a></p>
             </form>
         </div>
     </div>
 </body>
 </html>
+
+
+

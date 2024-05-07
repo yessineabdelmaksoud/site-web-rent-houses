@@ -1,1 +1,74 @@
  
+.add-box {
+        width: 400px;
+        margin: 0 auto;
+        background: rgba(217, 180, 255, 0.8); /* Ajout de transparence à l'arrière-plan */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre douce */
+    }
+
+
+/* Style for headings */
+h2 {
+    color: #125468;
+    text-align: center;
+}
+
+/* Style for form inputs */
+input[type="text"], select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Style for file input */
+input[type="file"] {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Style for submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for links */
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+p{
+    color: #140471; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(201, 140, 233, 0.5), rgba(255, 255, 255, 0.5)), url('../image/download.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
