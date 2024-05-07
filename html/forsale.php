@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION["email"])) {
     $username = $_SESSION["email"];
 }
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -164,7 +164,7 @@ if (isset($_SESSION["email"])) {
             exit();
         }
 
-        $sql = "SELECT * FROM home where for_='rent';";
+        $sql = "SELECT * FROM home where for_='sale';";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {

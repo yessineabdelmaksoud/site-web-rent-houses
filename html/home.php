@@ -25,11 +25,12 @@ if (isset($_SESSION["email"])) {
     <div>
         <div class="entet">
             <ul>
-                <li><a href="home.php">home</a></li>
-                <li><a href="forrent.php">for rent</a></li>
-                <li><a href="forsale.php">for sale</a></li>
-                <li><a href="holiday.php">holiday rentals</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="forrent.php">For rent</a></li>
+                <li><a href="forsale.php">For sale</a></li>
+                <li><a href="holiday.php">Holiday rentals</a></li>
+                <li><a href="forstudent.php">For student </a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <?php if (isset($username)) : ?>
                 <ul>
@@ -38,8 +39,8 @@ if (isset($_SESSION["email"])) {
                 </ul>
             <?php else : ?>
                 <ul>
-                    <li><a href="signin.php">sign in</a></li>
-                    <li><a href="login.php">log in</a></li>
+                    <li><a href="signin.php">Sign up</a></li>
+                    <li><a href="login.php">Log in</a></li>
                 </ul>
             <?php endif; ?>
 

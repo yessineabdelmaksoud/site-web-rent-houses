@@ -163,8 +163,7 @@ if (isset($_SESSION["email"])) {
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
             exit();
         }
-
-        $sql = "SELECT * FROM home where for_='rent';";
+        $sql = "SELECT * FROM home where for_='student';";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {

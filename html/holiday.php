@@ -164,7 +164,7 @@ if (isset($_SESSION["email"])) {
             exit();
         }
 
-        $sql = "SELECT * FROM home where for_='rent';";
+        $sql = "SELECT * FROM home where for_='holiday';";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
